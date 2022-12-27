@@ -1,0 +1,11 @@
+.navbar {
+   @apply w-screen bg-rose-700 px-3 sm:px-12 py-4 flex justify-between items-center fixed top-0;
+}
+
+.items-container {
+   @apply flex justify-evenly items-center gap-x-3 sm:gap-x-5 sm:text-lg text-slate-200;
+}
+
+.item {
+   @apply cursor-pointer hover:text-white transition-colors duration-200;
+}

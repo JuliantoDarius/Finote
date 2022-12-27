@@ -1,0 +1,47 @@
+.login-section {
+   @apply w-screen h-screen overflow-hidden grid place-items-center relative ;
+}
+
+.form-container {
+   @apply bg-primary/80 max-w-md w-95% mx-auto py-5 grid place-items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 backdrop-blur-sm rounded-lg;
+}
+
+.form-container > div {
+   @apply relative;
+}
+
+.login-bg-container {
+   @apply w-95% h-auto -z-10;
+}
+
+.login-icon-container {
+   @apply my-5 max-w-[8rem] sm:max-w-[10rem] overflow-hidden;
+}
+
+.login-icon {
+   @apply p-5 sm:p-7 bg-white rounded-full;
+}
+
+.input-container {
+   @apply mb-5 last-of-type:mb-0;
+}
+
+.float-label {
+   @apply text-slate-200 text-lg sm:text-xl absolute pointer-events-none left-1 top-0 transition-all duration-300;
+}
+
+.float-text-input {
+   @apply sm:w-[275px] text-lg sm:text-xl placeholder:text-transparent px-1 py-0.5 outline-none bg-transparent border-b-2 border-slate-300 transition-all duration-300;
+}
+
+.float-text-input:focus, .float-text-input:not(:placeholder-shown) {
+   @apply border-white mt-5;
+}
+
+.float-text-input:focus ~ .float-label, .float-text-input:not(:placeholder-shown) ~ .float-label {
+   @apply -translate-y-[5px] left-0 text-white;
+}
+
+.login-btn {
+   @apply px-8 py-1.5 text-black sm:w-[275px] bg-emerald-500 rounded cursor-pointer transition-colors hover:text-white hover:bg-emerald-700;
+}
